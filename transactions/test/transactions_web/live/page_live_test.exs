@@ -1,0 +1,11 @@
+defmodule TransactionsWeb.PageLiveTest do
+  use TransactionsWeb.ConnCase
+
+  import Phoenix.LiveViewTest
+
+  test "disconnected and connected render", %{conn: conn} do
+    {:ok, _page_live, _disconnected_html} = live(conn, "/")
+    # assert disconnected_html =~ "Welcome to Phoenix!"
+    # assert render(page_live) =~ "Welcome to Phoenix!"
+  end
+end
